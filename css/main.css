@@ -387,6 +387,7 @@ pre[class*="language-"] {
   font-family: "FontAwesome";
   content: "\f073";
   padding-right: 0.3em;
+  font-size: 13px;
 }
 .post .post-meta .category:before {
   font-family: "FontAwesome";
@@ -471,12 +472,14 @@ pre[class*="language-"] {
   background: #f7f8f8;
 }
 .post .post-content p a {
-  color: #01579f;
-  padding-bottom: 2px;
-  word-break: break-all;
-}
-.post .post-content p a:hover {
-  text-decoration: underline;
+  padding: 2px 4px;
+  font-size: 13px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .post .post-content .caption {
   color: #444;
@@ -615,7 +618,7 @@ pre {
   }
 }
 #footer {
-  padding: .8em 0 3.6em;
+  padding: .8em 0 1em;
   margin-top: 1em;
   line-height: 2.5;
   color: #6E7173;
