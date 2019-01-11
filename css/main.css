@@ -365,34 +365,75 @@ pre[class*="language-"] {
 .post .post-title {
   color: #555;
   margin: 0;
-  /*font-weight: 600;*/
-  line-height: 1.1;
+  line-height: 2;
   font-size: 2.4em;
   text-align: left;
   font-family: georgia,serif,"ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
 }
 .post .post-title a {
-  color: #333;
+  color: #000;
 }
 .post .post-meta {
-  padding: 0;
-  margin: 15px 0 0;
-  color: #6E7173;
-  float: left;
-  text-align: center;
-  display: inline;
-  text-indent: .15em;
+  height: auto;
+  overflow: hidden;
+  line-height: 2;
 }
-.post .post-meta:before {
+.post .post-meta .date-time:before {
   font-family: "FontAwesome";
   content: "\f073";
   padding-right: 0.3em;
+  color: #7400af;
+}
+.post .post-meta .date-time span {
+  font-style: italic;
+  padding: 2px 6px;
   font-size: 13px;
+  color: #fff;
+  background-color: #865633;
+  border-radius: 4px;
+  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 5px;
+  vertical-align: bottom;
 }
 .post .post-meta .category:before {
   font-family: "FontAwesome";
   content: "\f07c";
   padding-right: 0.3em;
+  color: #7400af;
+}
+.post .post-meta .category a {
+  font-style: italic;
+  padding: 2px 6px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #865633;
+  border-radius: 4px;
+  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.post .post-meta .tag:before {
+  font-family: "FontAwesome";
+  content: "\f02c";
+  padding-right: 0.3em;
+  color: #7400af;
+}
+.post .post-meta .tag a {
+  font-style: italic;
+  padding: 2px 6px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #865633;
+  border-radius: 4px;
+  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 5px;
+  vertical-align: bottom;
 }
 .post .post-meta #busuanzi_value_page_pv:before {
   font-family: "FontAwesome";
@@ -433,11 +474,10 @@ pre[class*="language-"] {
 }
 .post .post-content {
   clear: left;
-  padding-top: 15px;
   text-align: justify;
   text-justify: distribute;
   word-break: normal;
-  margin: 30px 0 10px;
+  margin: 15px 0 10px;
   font-family: NotoSansHans-Regular,AvenirNext-Regular,arial,Hiragino Sans GB,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
   font-size: 16px;
   line-height: 32px;
@@ -1056,16 +1096,20 @@ pre {
 }
 /* read more*/
 .readmore {
-  margin: 4em 0 2em 0;
+  margin: 2em 0;
 }
 .readmore a {
   font-size: 14px;
   color: #444;
   padding: 8px 16px;
-  border: 2px solid #aaa;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
+  border: 2px solid #7400af;
+  margin: 0 auto;
+  display: block;
+  width: 80px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .readmore a:after {
   font-family: "FontAwesome";
@@ -1073,14 +1117,14 @@ pre {
   padding-left: 0.3em;
 }
 .readmore a:hover {
-  background: #3ac3b3;
+  background: #865633;
   color: #fff;
-  border: 2px solid #3ac3b3;
+  border: 2px solid #865633;
 }
 
 @media print, screen and (max-width: 48em) {
   .readmore {
-    margin: 2em 0 1em 0;
+    margin: 1em 0;
     text-align: center;
   }
 }
