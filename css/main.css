@@ -378,51 +378,33 @@ pre[class*="language-"] {
   overflow: hidden;
   line-height: 2;
 }
-.post .post-meta .date-time:before {
-  font-family: "FontAwesome";
-  content: "\f073";
-  padding-right: 0.3em;
-  color: #7400af;
-}
-.post .post-meta .date-time span {
-  font-style: italic;
-  padding: 2px 6px;
-  font-size: 13px;
-  color: #fff;
-  background-color: #865633;
-  border-radius: 4px;
-  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
-  white-space: nowrap;
-  cursor: pointer;
-  margin-right: 5px;
-  vertical-align: bottom;
-}
-.post .post-meta .category:before {
-  font-family: "FontAwesome";
-  content: "\f07c";
-  padding-right: 0.3em;
-  color: #7400af;
-}
-.post .post-meta .category a {
-  font-style: italic;
-  padding: 2px 6px;
-  font-size: 13px;
-  color: #fff;
-  background-color: #865633;
-  border-radius: 4px;
-  font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
-  white-space: nowrap;
-  cursor: pointer;
-  margin-right: 5px;
-  vertical-align: bottom;
-}
+.post .post-meta .date-time:before,
+.post .post-meta .category:before,
 .post .post-meta .tag:before {
   font-family: "FontAwesome";
-  content: "\f02c";
   padding-right: 0.3em;
-  color: #7400af;
+  color: #999;
 }
-.post .post-meta .tag a {
+.post .post-meta .date-time.date-time:before,
+.post .post-meta .category.date-time:before,
+.post .post-meta .tag.date-time:before {
+  content: "\f073";
+}
+.post .post-meta .date-time.category:before,
+.post .post-meta .category.category:before,
+.post .post-meta .tag.category:before {
+  content: "\f07c";
+}
+.post .post-meta .date-time.tag:before,
+.post .post-meta .category.tag:before,
+.post .post-meta .tag.tag:before {
+  content: "\f02c";
+}
+.post .post-meta .date-time a, .post .post-meta .date-time span,
+.post .post-meta .category a,
+.post .post-meta .category span,
+.post .post-meta .tag a,
+.post .post-meta .tag span {
   font-style: italic;
   padding: 2px 6px;
   font-size: 13px;
@@ -1100,9 +1082,9 @@ pre {
 }
 .readmore a {
   font-size: 14px;
-  color: #444;
+  color: #999;
   padding: 8px 16px;
-  border: 2px solid #7400af;
+  border: 2px solid #999;
   margin: 0 auto;
   display: block;
   width: 80px;
