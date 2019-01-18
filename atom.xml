@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://seven93517.github.io/"/>
-  <updated>2019-01-16T04:38:03.643Z</updated>
+  <updated>2019-01-18T02:46:20.187Z</updated>
   <id>https://seven93517.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS中的BFC(块级格式化上下文)</title>
+    <link href="https://seven93517.github.io/2019/01/18/CSS%E4%B8%AD%E7%9A%84BFC-%E5%9D%97%E7%BA%A7%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/"/>
+    <id>https://seven93517.github.io/2019/01/18/CSS中的BFC-块级格式化上下文/</id>
+    <published>2019-01-18T02:44:44.000Z</published>
+    <updated>2019-01-18T02:46:20.187Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>流体特性<br>块级元素，如div元素（下同），在默认情况下（非浮动、绝对定位等），水平方向会自动填满外部的容器；如果有 <code>margin-left</code> <code>margin-right</code> <code>padding-left</code> <code>padding-right</code> <code>border-left-width</code> <code>border-right-width</code> 等，实际内容区域会响应变窄。</p></li><li><p><code>BFC</code>：块级格式化上下文（<code>Block formatting context</code> ）。<br>它是一个独立的渲染区域，只有Block-level box参与， 它规定了内部的Block-level Box如何布局，并且与这个区域外部毫不相干。</p></li><li><p>BFC元素特性表现原则就是，内部子元素再怎么翻江倒海，翻云覆雨都不会影响外部的元素。</p></li></ul><hr><ul><li>BFC布局规则：<ul><li>内部的盒子会在垂直方向，一个接一个地放置。</li><li>盒子垂直方向的距离由 <code>margin</code> 决定。属于同一个  <code>BFC</code> 的两个相邻盒子的 <code>margin</code> 会发生重叠</li><li>每个元素的 <code>margin</code> 盒子的左边， 与包含块<code>border</code> 盒子的左边相接触。即使存在浮动也是如此。</li><li><code>BFC</code> 的区域不会与<code>float</code> 盒子重叠。</li><li><code>BFC</code> 就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。</li><li>计算 <code>BFC</code> 的高度时，浮动元素也参与计算</li></ul></li></ul><hr><ul><li>触发BFC：<ul><li>float的值不为none。</li><li>overflow的值为auto,scroll或hidden。</li><li>display的值为table-cell, table-caption, inline-block中的任何一个。</li><li>position的值不为relative和static</li></ul></li></ul><hr><ul><li>参考链接：<ul><li><a href="http://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/" target="_blank" rel="noopener">张鑫旭：CSS深入理解流体特性和BFC特性下多栏自适应布局</a></li><li><a href="http://www.cnblogs.com/lhb25/p/inside-block-formatting-ontext.html" target="_blank" rel="noopener">梦想天空：前端精选文摘：BFC 神奇背后的原理</a> </li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;流体特性&lt;br&gt;块级元素，如div元素（下同），在默认情况下（非浮动、绝对定位等），水平方向会自动填满外部的容器；如果有 &lt;code&gt;margin-left&lt;/code&gt; &lt;code&gt;margin-right&lt;/code&gt; &lt;code&gt;padding-le
+      
+    
+    </summary>
+    
+      <category term="Web 前端" scheme="https://seven93517.github.io/categories/Web-%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Web 前端" scheme="https://seven93517.github.io/tags/Web-%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://seven93517.github.io/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>SpringBoot 项目中 Mybatis 获取添加的自增主键ID</title>
