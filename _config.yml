@@ -1,16 +1,16 @@
 # ----------- CONFIGURABLE START -----------
-title:            "Seven93517|Seven93517 blog|"
-description:      "欢迎来到 Seven93517「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              https://seven93517.github.io # 域名
-site_name:        Seven93517
-signoff:          "Seven93517" # Your name
+title:            Miracle Sean| Miracle Sean
+description:      欢迎来到 Miracle Sean「思恩奇迹」侃侃理想、谈谈人生、敲敲代码。
+url:              https://miracle-sean.github.io # 域名
+site_name:        Miracle Sean
+signoff:          Miracle Sean # Your name
 facebook_appid:   #Seven93517"
 google_analytics: UA-149746503-1
 share:            true 
 # 分页
-paginate: 15
-paginate_path: "seven93517:num"
-plugins: [jekyll-paginate]
+paginate:         15  
+paginate_path:    ":num"
+plugins:          [jekyll-paginate]
 links:
   - name:         首页
     url:          /
