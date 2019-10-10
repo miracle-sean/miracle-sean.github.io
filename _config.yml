@@ -1,9 +1,10 @@
 # ----------- CONFIGURABLE START -----------
-title:            "Seven93517|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 Seven93517「角落」侃侃理想、谈谈人生、敲敲代码。"
+title:            "Seven93517|Seven93517 blog|"
+description:      "欢迎来到 Seven93517「角落」侃侃理想、谈谈人生、敲敲代码。"
 url:              https://seven93517.github.io # 域名
+site_name:        Seven93517
 signoff:          "Seven93517" # Your name
-facebook_appid:   #liberxue
+facebook_appid:   #Seven93517"
 google_analytics: UA-101222464-1
 share:            true 
 # 分页
