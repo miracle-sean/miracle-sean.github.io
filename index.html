@@ -22,7 +22,7 @@
                         <div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}">{{ posts.title }}</a></div>
                         <div class="item-meta clearfix">
                             <div class="item-meta-cat">
-                                <a href="/tags#{{ posts.category }}" class="category bg-{{posts.background }}">{{ posts.category }}</a>
+                                <a href="/tags#{{ posts.category }}" class="category">{{ posts.category }}</a>
                                 <a href="/archives#{{ posts.date | date: '%Y'}}" >{{ posts.date | date: "%F"}}</a>
                             </div>
                         </div>
@@ -33,4 +33,4 @@
         </div>
     </div>
 </div>
-    {% include pagination.html %}
+{% include pagination.html %}

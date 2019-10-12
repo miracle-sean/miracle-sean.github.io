@@ -18,9 +18,11 @@
     -webkit-animation-timing-function: cubic-bezier(.61, .04, .17, 1.32);
     animation-timing-function: cubic-bezier(.61, .04, .17, 1.32);
 }
-code{
-  font-family: "Source Sans Pro";
+
+code {
+    font-family: "Source Sans Pro";
 }
+
 *,
 :after,
 :before {
@@ -166,8 +168,13 @@ a {
     outline: 0;
 }
 
-/* a:active,a:focus,a:hover{color:#eb5055;outline:0;}  */
-/* a:active,a:focus,a:hover{color:#eb5055;outline:0;} */
+a:active,
+a:focus,
+a:hover {
+    color: #eb5055 !important;
+    outline: 0;
+}
+
 a::before {
     color: #eb5055;
     content: attr(data-hover);
@@ -596,31 +603,35 @@ textarea:-ms-input-placeholder {
     position: relative;
     width: 1040px;
     max-width: 100%;
-    height: 80px;
+    . height: 80px;
     margin: 0 auto;
 }
 
 .navbar-logo {
-    font-size: 22px;
-    line-height: 22px;
     position: absolute;
     top: 50%;
     left: 0;
     display: block;
     width: auto;
     max-width: 50%;
-    height: 22px;
-    margin-top: -10px;
+    height: 32px;
+    margin-top: -15px;
     margin-left: 25px;
     text-decoration: none;
-    font-family: "Abril Fatface", serif;
 }
 
 .navbar-logo img {
+    vertical-align: top;
     width: auto;
-    height: 35px;
+    height: 30px;
     outline: 0;
-    margin: -13px;
+}
+
+.navbar-logo span {
+    vertical-align: top;
+    font-size: 22px;
+    line-height: 32px;
+    font-family: "Abril Fatface", serif;
 }
 
 .navbar-menu {
@@ -634,8 +645,8 @@ textarea:-ms-input-placeholder {
     font-size: 14px;
     padding: 0 15px;
 }
+
 .navbar-menu a:hover {
-    color: #eb5055;
     font-size: 16px;
 }
 
@@ -1020,6 +1031,7 @@ textarea:-ms-input-placeholder {
     padding: 0 22px 15px;
     text-align: right;
 }
+
 .post-list-item-container .item-label .item-meta .item-meta-cat {
     height: auto;
     overflow: hidden;
@@ -1036,11 +1048,9 @@ textarea:-ms-input-placeholder {
     text-transform: none;
     color: #5f5f5f;
 }
-.post-list-item-container .item-label .item-meta .item-meta-cat a.category{
-    float: left;
-    padding: 0 10px;
-    color: #fff;
-    border-radius: 10px;
+
+.post-list-item-container .item-label .item-meta .item-meta-cat a.category {
+    float: left;]
 }
 
 .post-list-item-container .item-label .item-meta .item-meta-date {
@@ -2013,8 +2023,8 @@ directory-content:after {
     text-decoration: none;
     color: #5f5f5f;
 }
+
 .footer-social .social-list a:hover {
-    color: #eb5055;
     font-size: 16px;
 }
 
@@ -2041,14 +2051,58 @@ directory-content:after {
 }
 
 .footer-meta .meta-copyright .info-logo {
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.footer-meta .meta-copyright .info-logo img {
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    padding: 5px;
+    margin: 5px;
+    width: 40px;
+}
+
+.footer-meta .meta-copyright .info-logo img:hover {
+    animation: turn 200ms linear infinite;
+}
+
+@keyframes turn {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.footer-meta .meta-copyright .info-logo span {
+    vertical-align: top;
+    line-height: 50px;
     font-family: "Abril Fatface", serif;
     font-size: 20px;
 }
 
 .footer-meta .meta-copyright .info-text p {
     font-size: 14px;
-    line-height: 20px;
-    margin: 0 0 10px 0;
+    line-height: 2;
     color: #767676;
 }
 
@@ -2064,10 +2118,12 @@ directory-content:after {
     text-decoration: none;
     color: #5f5f5f;
 }
-.footer-meta .meta-posts ul{
+
+.footer-meta .meta-posts ul {
     padding: 0;
     margin: 10px 0;
 }
+
 .footer-meta .meta-posts li {
     font-size: 13px;
     line-height: 25px;
@@ -2081,15 +2137,16 @@ directory-content:after {
 .footer-meta .meta-posts li a {
     color: #5f5f5f;
 }
+
 .footer-meta .meta-posts li a:hover {
     font-size: 15px;
-    color: #eb5055;
 }
 
-.footer-meta .meta-comments ul{
+.footer-meta .meta-comments ul {
     padding: 0;
     margin: 10px 0;
 }
+
 .footer-meta .meta-comments li {
     font-size: 13px;
     line-height: 25px;
@@ -2103,10 +2160,11 @@ directory-content:after {
 .footer-meta .meta-comments li a {
     color: #767676;
 }
+
 .footer-meta .meta-comments li a:hover {
     font-size: 15px;
-    color: #eb5055;
 }
+
 /* ==========================================================================
    #reponse
    ========================================================================== */
@@ -2284,14 +2342,6 @@ directory-content:after {
     .footer-meta .meta-item {
         width: 100%;
         padding: 0 10px;
-    }
-
-    .footer-meta .meta-copyright .info-text {
-        float: right;
-    }
-
-    .footer-meta .meta-copyright .info-text p {
-        text-align: right;
     }
 
     .post-onelist-item-container .onelist-item-thumb {
